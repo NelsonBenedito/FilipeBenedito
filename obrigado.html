@@ -4,37 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obrigado por entrar em contato</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+  <style>
+    * {
+      text-decoration: none;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    button {
+      display: flex;
+      border: none;
+      border-radius: 12px;
+      background-color: rgb(51, 180, 255);
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+      margin-top: 2rem;
+    }
+    button:hover {
+      background-color: rgb(93, 201, 255);
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+    h1 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+    i{
+      margin-bottom: 2rem;
+    }
+    body{
+        overflow: hidden;
+    }
+  </style>
   <body>
-    <style>
-      * {
-        text-decoration: none;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      }
-      button {
-        display: flex;
-        border: none;
-        border-radius: 12px;
-        background-color: rgb(51, 180, 255);
-        padding: 0.5rem 2rem;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: rgb(93, 201, 255);
-      }
-    </style>
-    <div
-      style="
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      "
-    >
-      <h1>Obrigado por entrar em contato!</h1>
-      <p>Nossa equipe irá responder o mais breve possível.</p>
+    <div class="container">
+      <div class="content">
+        <i class="fa-regular fa-circle-check" style="color: #5dc9ff; font-size: 104px;"></i>
+        <h1>Obrigado por entrar em contato!</h1>
+        <p>Nossa equipe irá responder o mais breve possível.</p>
+      </div>
       <a href="/"><button>Voltar para a página inicial</button></a>
     </div>
   </body>
